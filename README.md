@@ -1,1 +1,3 @@
 # Lanemastery.gg
+
+LaneMastery.gg is a single-page application designed to help League of Legends players master their lane matchups. Built with React, the app provides an intuitive interface where users can explore champion abilities, analyze lane-specific strategies, and access counter-pick recommendations. The application features client-side routing using React Router and utilizes a JSON server backend for data persistence, supporting both GET and POST requests. Whether you're looking to dominate your lane or refine your skills, LaneMastery.gg offers the tools and insights you need to elevate your gameplay.
