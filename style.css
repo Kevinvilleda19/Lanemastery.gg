@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #3b3b3b);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #444;
+    color: #f0f0f0;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#searchBarContainer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#searchBar, #roleDropdown {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    width: 90%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#searchBar:focus, #roleDropdown:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#championContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.ch-card {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 12px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.ch-card.expanded {
+    width: 100%;
+    max-width: none;
+    padding: 2rem;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+.ch-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.ch-card.expanded img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+
+.ch-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #f0f0f0;
+}
+
+.ch-card.expanded h3 {
+    font-size: 2rem;
+}
+
+.ch-card p {
+    color: #aaa;
+}
+
+.ch-card.expanded p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.abilities-list {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.abilities-list li {
+    margin-bottom: 0.5rem;
+}
+
+body, header, .ch-card, #searchBar, #roleDropdown {
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
